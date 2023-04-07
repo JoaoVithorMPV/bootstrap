@@ -80,3 +80,106 @@ body {
 #servicos a.destaque .img-container img {
   max-height: 160px;
 }
+
+#cliente a.link-cliente {
+  padding: 0 15px;
+  background-color: #fff;
+  filter: grayscale(100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--light);
+  height: 100px;
+  transition: all 0.2s ease-out;
+  opacity: 0.6;
+  border-radius: 5px;
+}
+
+#cliente a.link-cliente:hover {
+  filter: none;
+  transform: scale(1.2);
+  box-shadow: 0 0 15px 0 #00000015;
+  opacity: 1;
+}
+
+#cliente a.link-cliente img {
+  max-height: 70px;
+  width: 100%;
+}
+
+#cliente .cliente-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  background: var(--light);
+  border-radius: 5px;
+}
+
+#cliente .cliente-texto .imagem {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  margin-left: -70px;
+  color: #b4b4b4;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+#cliente .cliente-texto .imagem span {
+  color: var(--secondary);
+  font-size: 110px;
+  line-height: 110px;
+  letter-spacing: -10px;
+  font-weight: 900;
+  display: block;
+}
+
+#cliente .cliente-texto .telefone {
+  display: flex;
+  font-size: 14px;
+  color: #b4b4b4;
+}
+
+#cliente .cliente-texto .telefone span {
+  font-size: 25px;
+  color: #797979;
+  font-weight: 900;
+  display: block;
+}
+
+#servicos .badge {
+  font-weight: 400;
+}
+
+#servicos .element-item img {
+  border-radius: 5px;
+  transition: all 0.2 ease-out;
+}
+
+#servicos .element-item img:hover {
+  box-shadow: 0 0 30px 0 #00000040;
+}
+
+#servicos .button-group {
+  margin-bottom: 30px;
+}
+
+#servicos .button-group button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+
+#servicos .button-group button + button {
+  margin-left: 30px;
+}
+
+#servicos .button-group button.active {
+  color: var(--primary);
+}

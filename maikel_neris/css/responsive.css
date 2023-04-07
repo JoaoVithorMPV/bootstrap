@@ -12,4 +12,22 @@
   #servicos a.destaque .img-container img {
     max-height: 120px;
   }
+
+  #cliente .cliente-texto .imagem {
+    padding: 10px 0 30px 0;
+  }
+
+  #cliente .cliente-texto .imagem img {
+    max-width: 150px;
+  }
+}
+
+@media (max-width: 990.41px) {
+  #cliente .cliente-texto .imagem {
+    padding: 10px 0 30px 0;
+  }
+
+  #cliente .cliente-texto .imagem img {
+    max-width: 150px;
+  }
 }
