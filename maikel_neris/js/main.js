@@ -8,8 +8,13 @@ window.onscroll = function () {
 };
 
 //ISOTOPE
-let btns = $("servicos .butto-group button");
+let btns = $("#servicos .button-group button");
 btns.click(function (e) {
-  $("servicos .butto-group button").removeClass();
+  $("#servicos .button-group button").removeClass();
   e.target.classList.add("active");
+
+  let selector = $(e.target).attr("data-filter");
+  $("#servicos .grid").isotope({
+    filter: selector,
+  });
 });
