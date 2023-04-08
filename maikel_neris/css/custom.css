@@ -189,11 +189,14 @@ body {
 }
 
 #depoimentos .depoimento {
-  display: flex;
   background-color: var(--light);
   border-radius: 5px;
-  align-items: center;
+  display: flex;
   padding: 30px;
+}
+
+#depoimentos .depoimento .quote {
+  max-width: 35px;
 }
 
 #depoimentos .depoimento .name {
